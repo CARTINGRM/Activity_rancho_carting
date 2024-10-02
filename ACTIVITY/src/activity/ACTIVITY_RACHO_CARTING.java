@@ -8,20 +8,18 @@ public class ACTIVITY_RACHO_CARTING {
 
    
     public static void main(String[] args) {
+       
+        Scanner scanner = new Scanner(System.in);
 
-      
-        Scanner scn = new Scanner (System.in);
-        
-         System.out.println("Enter the radius of the circle:");
-         
-        double radius = scn.nextDouble();
-        
-        double area= Math.PI * radius * radius;
-        
-        System.out.println("The area of the circle is:"+ area);
-    }
-        
-        
-    }
-    
+        System.out.print("Enter the first number: ");
+        int num1 = scanner.nextInt();
 
+        System.out.print("Enter the second number: ");
+        int num2 = scanner.nextInt();
+
+        double result = num1 + num2;
+
+        System.out.println("The sum of " + num1 + " and " + num2 + " is " + result);
+    }
+}
+  
