@@ -9,17 +9,28 @@ public class ACTIVITY_RACHO_CARTING {
    
     public static void main(String[] args) {
        
-        Scanner scanner = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.print("Enter the first number: ");
+//        int num1 = scanner.nextInt();
+//
+//        System.out.print("Enter the second number: ");
+//        int num2 = scanner.nextInt();
+//
+//        double result = num1 + num2;
+//
+//        System.out.println("The sum of " + num1 + " and " + num2 + " is " + result);
 
-        System.out.print("Enter the first number: ");
-        int num1 = scanner.nextInt();
+         MeanCalculator meanCalculator = new MeanCalculator();
 
-        System.out.print("Enter the second number: ");
-        int num2 = scanner.nextInt();
+        meanCalculator.inputNumbers();
+        double mean = meanCalculator.calculateMean();
 
-        double result = num1 + num2;
-
-        System.out.println("The sum of " + num1 + " and " + num2 + " is " + result);
+        System.out.println("The mean is: " + mean);
     }
 }
+          
+          
+    
+
   
